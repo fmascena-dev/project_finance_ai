@@ -1,15 +1,18 @@
-'use client'
-
+import { UserButton } from "@clerk/nextjs";
 import { Button } from "./_components/ui/button";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  const message = "Welcome to Finance AI!";
+export default async function Home() {
+  const userId = await auth()
+  if (!userId) {
+    redirect('/login')
+  }
 
   return (
-    <div>
-      <h1 className="p-5 text-3xl font-bold text-red-500 underline">Home</h1>
-      <Button variant="default" onClick={() => alert(message)}>
-        Primary Button
+    <div className="p-5">
+      <Button variant="outlineTwo">
+        <UserButton showName />
       </Button>
     </div>
   );
