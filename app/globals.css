@@ -14,13 +14,17 @@ body {
 
 @layer base {
   :root {
+    --deposit: 102 100% 37% / 0.078;
+    --expense: 0 81% 55% / 0.078;
+    --investment: 0 0% 100% / 0.078;
+    --danger: 0 81% 55%;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: transparent;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 102 59% 44%;
+    --primary: hsl(102 59% 44%);
     --primary-foreground: 355.7 100% 97.3%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -78,4 +82,17 @@ body {
   body {
     @apply h-full bg-background text-foreground;
   }
+}
+
+.cl-internal-1m7odyu {
+  font-size: 1.125rem !important;
+  padding-left: 0 !important;
+}
+
+.cl-internal-1erfakr {
+  padding: 1rem 1.5rem !important;
+}
+
+.cl-internal-ofnnhr:focus {
+  box-shadow: none !important;
 }
