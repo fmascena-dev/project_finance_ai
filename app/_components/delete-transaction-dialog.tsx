@@ -46,12 +46,12 @@ const DeleteTransactionDialog = ({
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel className="rounded-full">
+          <AlertDialogCancel className="rounded-full font-bold">
             Cancelar
           </AlertDialogCancel>
           <AlertDialogAction
             onClick={handleDelete}
-            className="rounded-full bg-red-500 text-destructive-foreground hover:bg-red-500/70"
+            className="rounded-full border border-red-700 bg-transparent font-bold text-destructive-foreground hover:bg-red-950"
           >
             Excluir
           </AlertDialogAction>

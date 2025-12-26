@@ -18,7 +18,7 @@ const DeleteTransactionButton = ({
   return (
     <>
       <Button
-        variant="ghostTwo"
+        variant="ghostThree"
         size="icon"
         className="text-muted-foreground"
         onClick={() => setDialogIsOpen(true)}
