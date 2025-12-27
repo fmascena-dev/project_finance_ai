@@ -16,7 +16,7 @@ export default function NavBar() {
     <nav className="flex justify-between border-b border-primary/20 px-6 py-4">
       <div className="flex items-center gap-10">
         <Image
-          src="/logo.svg"
+          src="/logo_dev.svg"
           alt="logo"
           width={173}
           height={39}

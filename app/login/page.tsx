@@ -6,20 +6,20 @@ import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
 export default async function LoginPage() {
-  const {userId} = await auth()
-  if(userId) {
-    redirect('/')
+  const { userId } = await auth();
+  if (userId) {
+    redirect("/");
   }
-  
+
   return (
     <div className="grid h-full grid-cols-2">
       {/* ESQUERDA */}
       <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-8">
         <Image
-          src="/logo.svg"
+          src="/logo_dev.svg"
           width={173}
           height={39}
-          alt="Finance AI"
+          alt="Finance Dev Logo"
           className="mb-8"
         />
         <h1 className="mb-3 text-4xl font-bold">Bem-vindo</h1>
