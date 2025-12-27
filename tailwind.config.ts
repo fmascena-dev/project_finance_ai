@@ -12,7 +12,10 @@ const config: Config = {
       colors: {
         deposit: "hsl(var(--deposit))",
         expense: "hsl(var(--expense))",
-        investment: "hsl(var(--investment))",
+        investment: {
+          DEFAULT: "hsl(var(--investment))",
+          two: "hsl(var(--investment-two))",
+        },
         danger: "hsl(var(--danger))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

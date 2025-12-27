@@ -16,7 +16,8 @@ body {
   :root {
     --deposit: 102 100% 37% / 0.078;
     --expense: 0 81% 55% / 0.078;
-    --investment: 0 0% 100% / 0.078;
+    --investment: 0 0% 100% / 0.075;
+    --investment-two: 0 0% 100% / 0.08;
     --danger: 0 81% 55%;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
