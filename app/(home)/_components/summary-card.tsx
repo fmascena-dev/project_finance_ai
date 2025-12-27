@@ -10,7 +10,7 @@ export default function SummaryCard({
   highlighted = false,
 }: SummaryCardProps) {
   return (
-    <Card className={highlighted ? "bg-muted" : ""}>
+    <Card className={highlighted ? "bg-white bg-opacity-5" : ""}>
       <CardHeader className="flex-row items-center gap-2">
         {icon}
         <p
