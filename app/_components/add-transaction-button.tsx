@@ -5,13 +5,21 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 import UpsertTransactionDialog from "./upsert-transaction-dialog";
 
-const AddTransactionButton = () => {
+type AddTransactionButtonProps = {
+  variant?: "default" | "outlineTwo";
+};
+
+const AddTransactionButton = ({
+  variant = "outlineTwo",
+  ...props
+}: AddTransactionButtonProps) => {
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
   return (
     <>
       <Button
-        variant="outlineTwo"
+        variant={variant}
+        {...props}
         className="rounded-full font-bold"
         onClick={() => setDialogIsOpen(true)}
       >
