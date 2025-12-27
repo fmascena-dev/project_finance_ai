@@ -38,6 +38,7 @@ const config: Config = {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           two: "hsl(var(--muted-two))",
+          three: "hsl(var(--muted-three))",
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
