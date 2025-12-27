@@ -41,13 +41,7 @@ import {
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { upsertTransaction } from "../_actions/upsert-transaction";
-
-interface UpsertTransactionDialogProps {
-  isOpen: boolean;
-  defaultValues?: FormSchema;
-  transactionId?: string;
-  setIsOpen: (isOpen: boolean) => void;
-}
+import { UpsertTransactionDialogProps } from "../models/finance.interface";
 
 const formSchema = z.object({
   name: z.string().trim().min(1, {

@@ -1,10 +1,7 @@
 import { Badge } from "@/app/_components/ui/badge";
-import { Transaction, TransactionType } from "@prisma/client";
+import { TransactionTypeBadgeProps } from "@/app/models/finance.interface";
+import { TransactionType } from "@prisma/client";
 import { CircleIcon } from "lucide-react";
-
-interface TransactionTypeBadgeProps {
-  transaction: Transaction;
-}
 
 const TransactionTypeBadge = ({ transaction }: TransactionTypeBadgeProps) => {
   if (transaction.type === TransactionType.DEPOSIT) {

@@ -11,13 +11,7 @@ import {
   AlertDialogTitle,
 } from "./ui/alert-dialog";
 import { deleteTransaction } from "../_actions/delete-transaction";
-
-interface DeleteTransactionDialogProps {
-  isOpen: boolean;
-  setIsOpen: (isOpen: boolean) => void;
-  transactionId: string;
-  transactionName: string;
-}
+import { DeleteTransactionDialogProps } from "../models/finance.interface";
 
 const DeleteTransactionDialog = ({
   isOpen,

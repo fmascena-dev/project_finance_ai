@@ -8,12 +8,7 @@ import { cn } from "@/app/_lib/utils";
 import { Button } from "./button";
 import { Calendar } from "./calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
-import { SelectSingleEventHandler } from "react-day-picker";
-
-interface DatePickerProps {
-  value?: Date;
-  onChange?: SelectSingleEventHandler;
-}
+import { DatePickerProps } from "@/app/models/finance.interface";
 
 export const DatePicker = ({ value, onChange }: DatePickerProps) => {
   return (

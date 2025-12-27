@@ -2,13 +2,9 @@
 
 import { Button } from "@/app/_components/ui/button";
 import DeleteTransactionDialog from "@/app/_components/delete-transaction-dialog";
-import { Transaction } from "@prisma/client";
 import { TrashIcon } from "lucide-react";
 import { useState } from "react";
-
-interface DeleteTransactionButtonProps {
-  transaction: Transaction;
-}
+import { DeleteTransactionButtonProps } from "@/app/models/finance.interface";
 
 const DeleteTransactionButton = ({
   transaction,
