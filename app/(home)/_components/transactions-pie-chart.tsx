@@ -25,7 +25,7 @@ const chartConfig = {
   },
   [TransactionType.EXPENSE]: {
     label: "Despesas",
-    color: "#E93030",
+    color: "#9f0712",
   },
 } satisfies ChartConfig;
 
@@ -44,7 +44,7 @@ export default function TransactionsPieChart({
     {
       type: TransactionType.EXPENSE,
       amount: expensesTotal,
-      fill: "#E93030",
+      fill: "#9f0712",
     },
     {
       type: TransactionType.INVESTMENT,

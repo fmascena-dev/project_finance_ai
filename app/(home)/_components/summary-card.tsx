@@ -14,7 +14,7 @@ export default function SummaryCard({
       <CardHeader className="flex-row items-center gap-2">
         {icon}
         <p
-          className={`${size === "small" ? "text-muted-foreground" : "text-white opacity-70"}`}
+          className={`${size === "small" ? "text-lg text-muted-foreground" : "text-lg text-white opacity-70"}`}
         >
           {title}
         </p>
