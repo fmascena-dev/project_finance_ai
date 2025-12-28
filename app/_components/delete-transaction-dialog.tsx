@@ -13,12 +13,12 @@ import {
 import { deleteTransaction } from "../_actions/delete-transaction";
 import { DeleteTransactionDialogProps } from "../models/finance.interface";
 
-const DeleteTransactionDialog = ({
+export default function DeleteTransactionDialog({
   isOpen,
   setIsOpen,
   transactionId,
   transactionName,
-}: DeleteTransactionDialogProps) => {
+}: DeleteTransactionDialogProps) {
   const handleDelete = async () => {
     try {
       await deleteTransaction(transactionId);
@@ -53,6 +53,4 @@ const DeleteTransactionDialog = ({
       </AlertDialogContent>
     </AlertDialog>
   );
-};
-
-export default DeleteTransactionDialog;
+}
