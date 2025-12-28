@@ -7,12 +7,12 @@ import { Card, CardContent } from "@/app/_components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
-  ChartTooltipContent,
   type ChartConfig,
 } from "@/app/_components/ui/chart";
 import { TransactionType } from "@prisma/client";
 import { TransactionsPieChartProps } from "@/app/models/finance.interface";
 import PercentageItem from "./percentage-item";
+import CustomTooltip from "./custom-tooltip";
 
 const chartConfig = {
   [TransactionType.INVESTMENT]: {
@@ -60,10 +60,7 @@ export default function TransactionsPieChart({
           className="mx-auto aspect-square max-h-[250px]"
         >
           <PieChart>
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent hideLabel />}
-            />
+            <ChartTooltip cursor={false} content={<CustomTooltip />} />
             <Pie
               data={chartData}
               dataKey="amount"

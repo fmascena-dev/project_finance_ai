@@ -85,3 +85,14 @@ export interface PercentageItemProps {
   title: string;
   value: number;
 }
+
+export interface CustomTooltipProps {
+  active?: boolean;
+  payload?: Array<{
+    name: string;
+    value: number;
+    payload: {
+      fill: string;
+    };
+  }>;
+}
