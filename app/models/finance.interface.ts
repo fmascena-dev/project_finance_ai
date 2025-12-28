@@ -6,9 +6,9 @@ import type {
 } from "@prisma/client";
 import { ReactNode } from "react";
 import { SelectSingleEventHandler } from "react-day-picker";
+import { TransactionPercentagePerType } from "../_data/get-dashboard/types";
 
 export interface SummaryCards {
-  month: string;
   balance: number;
   depositsTotal: number;
   investmentsTotal: number;
@@ -71,4 +71,17 @@ export interface UpsertTransactionParams {
   category: TransactionCategory;
   paymentMethod: TransactionPaymentMethod;
   date: Date;
+}
+
+export interface TransactionsPieChartProps {
+  typesPercentage: TransactionPercentagePerType;
+  depositsTotal: number;
+  investmentsTotal: number;
+  expensesTotal: number;
+}
+
+export interface PercentageItemProps {
+  icon: ReactNode;
+  title: string;
+  value: number;
 }
